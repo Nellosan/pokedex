@@ -1,0 +1,28 @@
+@import './pokemonTypes.scss';
+
+.detail-container {
+    h1 {
+        color: #333;
+    }
+
+    .pokemon-detail-title {
+        text-transform: capitalize;
+    }
+
+    .pokemon-detail-tags {
+        padding-top: 10px;
+    }
+
+    .pokemon-detail-cover {
+        margin-top: 20px;
+    }
+
+    .pokemon-cry-button {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .pokemon-detail-table {
+        margin-top: 1px;
+    }
+}

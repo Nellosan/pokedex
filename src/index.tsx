@@ -5,6 +5,8 @@ import reportWebVitals from './reportWebVitals';
 import AppRoutes from './routes/AppRoutes';
 import { store } from './redux/store';
 import { Content } from 'antd/es/layout/layout';
+import './styles/index.scss';
+import { Layout } from 'antd';
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
@@ -12,16 +14,9 @@ const root = ReactDOM.createRoot(
 root.render(
     <React.StrictMode>
         <Provider store={store}>
-            <Content
-                style={{
-                    padding: 24,
-                    margin: 0,
-                    minHeight: 280,
-                    backgroundColor: '#f9f9f9',
-                }}
-            >
+            <Layout className='main-layout'>
                 <AppRoutes />
-            </Content>
+            </Layout>
         </Provider>
     </React.StrictMode>
 );

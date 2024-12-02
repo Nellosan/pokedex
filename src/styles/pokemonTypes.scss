@@ -18,3 +18,10 @@ $types-colors: (
     "flying": #a98ff3,
     "ground": #bf9926
 );
+
+@each $type, $color in $types-colors {
+    .type-tag.#{$type} {
+        background-color: $color;
+        color: white;
+    }
+}
