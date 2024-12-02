@@ -1,7 +1,10 @@
 @import './pokemonTypes.scss';
 
 .homepage-container {
-    h1 { color: #333; }
+    h1 {
+        color: #333;
+        text-align: center;
+    }
 }
 
 .pokemon-detail-card {
@@ -10,8 +13,24 @@
         text-transform: capitalize;
     }
 
+    .pokemon-detail-cover {
+        text-align: center;
+
+        img {
+            width: 80%;
+        }
+
+        .ant-divider {
+            margin-bottom: 0;
+        }
+    }
+
     .ant-descriptions-item-label {
         font-weight: bold;
+    }
+
+    .pokemon-detail-stats {
+        margin-top: 20px;
     }
     
     .stat-bar {

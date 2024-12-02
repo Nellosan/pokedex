@@ -17,6 +17,7 @@ root.render(
                     padding: 24,
                     margin: 0,
                     minHeight: 280,
+                    backgroundColor: '#f9f9f9',
                 }}
             >
                 <AppRoutes />
