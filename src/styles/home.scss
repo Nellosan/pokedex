@@ -1,0 +1,45 @@
+@import './pokemonTypes.scss';
+
+.homepage-container {
+    h1 { color: #333; }
+}
+
+.pokemon-detail-card {
+    .ant-card-head-title {
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    .ant-descriptions-item-label {
+        font-weight: bold;
+    }
+    
+    .stat-bar {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .stat-title {
+            width: 150px;
+            text-align: right;
+            padding-right: 10px;
+            font-size: 10px;
+        }
+
+        .stat-progress {
+            flex-grow: 1;
+        }
+
+        .ant-progress-text {
+            font-size: 10px;
+        }
+    }
+
+    @each $type, $color in $types-colors {
+        .type-tag.#{$type} {
+            background-color: $color;
+            color: white;
+        }
+    }
+}
+  
